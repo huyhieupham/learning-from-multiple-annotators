@@ -29,6 +29,7 @@ Run ```pip install -r requirements.txt``` to install all the dependencies.
 
 ### Data Preparation
 The datasets should be organized similar to 
+
 `https://github.com/huyhieupham/learning-from-multiple-annotators/tree/main/data/VinCXR/labels_det`.
 
 ### Training
