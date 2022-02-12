@@ -28,7 +28,8 @@ Run ```pip install -r requirements.txt``` to install all the dependencies.
 ## Usage
 
 ### Data Preparation
-The datasets should be organized similar to `https://github.com/huyhieupham/learning-from-multiple-annotators/tree/main/data/VinCXR/labels_det`
+The datasets should be organized similar to 
+`https://github.com/huyhieupham/learning-from-multiple-annotators/tree/main/data/VinCXR/labels_det`.
 
 ### Training
 Follow the official [YOLOv5](https://github.com/ultralytics/yolov5) repo.
