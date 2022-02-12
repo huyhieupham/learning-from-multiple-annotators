@@ -7,26 +7,23 @@
 
 This repository contains a PyTorch implementation of the Learning from Multiple Expert Annotators for Enhancing Anomaly Detection in Medical Image Analysis, submitted in Neurocomputing journal. The arXiv paper will be coming soon.
 
-The overall architecture is about how to efficiently learn from annotations given by multiple radiologists. We firstly use **Weighted Boxes Fusion** to estimate the hidden ground truth with confidence scores. he estimated annotations and their scores are then used
-to train a deep learning object detector with a re-weighted loss function to localize
+The overall architecture is about how to efficiently learn from annotations given by multiple radiologists. We firstly use **Weighted Boxes Fusion** to estimate the hidden ground truth with confidence scores. The estimated annotations and their scores are then used to train a deep learning object detector with a re-weighted loss function to localize
 abnormal findings.   
 ![](.github/main_diagram.png)
 ## Installation
 
-To install all dependencies, run ```pip install -r requirements.txt```
-
+Run ```pip install -r requirements.txt``` to install all the dependencies.
 
 ## Structure
 
 * `ckps_det/` - Checkpoints for trained models.
 * `data/` - Data folder. Contains the annotations for both simulated and the real-world **VinDr-CXR** datasets
 * `source_det/` - Source code folder.
-  * `yolov5/` - YOLOv5 source code from [[3]]#yolov5.
+  * `yolov5/` - YOLOv5 source code from [ultralytics](https://github.com/ultralytics/yolov5).
   * `yolov5wl/` - YOLOv5 implemented with Experts Agreement Re-weighted Loss (EARL).
 * `README.md` - This manual.
 * `LICENSE` - GNU General Public License v3.0.
 * `requirements.txt` - Required Python packages.
-
 
 ## Usage
 
@@ -39,7 +36,7 @@ your code goes here
 ### Training
 To run training and inference, run the examples:
 ```
-  your code goes here
+your code goes here
 ```
 
 ## Feedback
